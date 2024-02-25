@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://ravi74079:TBTiGr1QNoP7C0Jp@cluster0.j0wv54k.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: micro_rating
+  application:
+    name: rating-service
+
+server:
+  port: 8083
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

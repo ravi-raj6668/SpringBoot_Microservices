@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/v1/organization")
+@RequestMapping("/organization")
 public class OrganizationController {
 
     private final OrganizationService organizationService;
